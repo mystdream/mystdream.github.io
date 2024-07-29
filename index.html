@@ -3,94 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhay Sharma - Data Analyst</title>
+    <title>Abhay Sharma - Data Scientist</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Abhay Sharma</h1>
-        <p>Data Analyst | MS Data Science & AI Student</p>
+        <div class="container">
+            <h1>Abhay Sharma</h1>
+            <p>Data Scientist</p>
+        </div>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Detail-oriented Data Science student with a strong foundation in Python, R, descriptive analysis, data visualization, and machine learning methodologies. Always searching for deeper meanings and ways to unlock the full potential of data to deliver balanced, insight-driven analyses.</p>
+    <main class="container">
+        <section id="profile">
+            <h2>Profile</h2>
+            <p>Detail-oriented Data Science student with a strong foundation in Python, R, descriptive analysis, data visualization and machine learning methodologies. Always searching for deeper meanings and ways to unlock the full potential of data to deliver balanced, insight-driven analyses.</p>
         </section>
 
         <section id="education">
             <h2>Education</h2>
-            <div class="education-item">
-                <h3>MS Data Science & AI</h3>
-                <p>Himachal Pradesh University, Shimla, Himachal Pradesh</p>
-                <p>2022-2024</p>
+            <ul>
+                <li>
+                    <h3>MS Data Science & AI</h3>
+                    <p>Himachal Pradesh University, Shimla, Himachal Pradesh</p>
+                    <p>2022-2024</p>
+                </li>
+                <li>
+                    <h3>BS Chemistry</h3>
+                    <p>MCM DAV College, Kangra, Himachal Pradesh</p>
+                    <p>2019-2022</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Voice Assistant with OpenAI</h3>
+                <ul>
+                    <li>Implemented a virtual voice assistant using OpenAI's API.</li>
+                    <li>Capable of understanding natural language and providing coherent responses.</li>
+                </ul>
             </div>
-            <div class="education-item">
-                <h3>BS Chemistry</h3>
-                <p>MCM DAV College, Kangra, Himachal Pradesh</p>
-                <p>2019-2022</p>
+            <div class="project">
+                <h3>Stock Price Prediction</h3>
+                <ul>
+                    <li>Developed an LSTM-based model for stock price prediction, demonstrating proficiency in time-series forecasting with deep learning and financial data.</li>
+                    <li>Implemented careful data preprocessing, feature scaling, and exploratory analysis to understand financial trends and improve model performance.</li>
+                    <li>Evaluated model accuracy using metrics like RMSE, MAE, and R-Squared, highlighting a focus on results-driven development.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Explainable AI-Driven Financial Transaction Fraud Detection</h3>
+                <ul>
+                    <li>Developed an AI model for detecting fraudulent financial transactions.</li>
+                    <li>Implemented and compared multiple models (Logistic Regression, Random Forest, XGBoost, LightGBM), with LightGBM achieving the best performance.</li>
+                    <li>Applied explainable AI techniques to provide insights into the model's decision-making process, enhancing transparency and trust in the fraud detection system.</li>
+                    <li>Utilized feature importance analysis to identify key indicators of fraudulent transactions, contributing to more effective fraud prevention strategies.</li>
+                </ul>
             </div>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>R</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <ul>
-                        <li>Pandas</li>
-                        <li>NumPy</li>
-                        <li>Matplotlib</li>
-                        <li>Seaborn</li>
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
-                        <li>Keras</li>
-                        <li>PowerBI</li>
-                        <li>AWS</li>
-                        <li>GCP</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Competencies</h3>
-                    <ul>
-                        <li>Machine Learning</li>
-                        <li>Deep Learning</li>
-                        <li>NLP</li>
-                        <li>Data Visualization</li>
-                        <li>Statistics</li>
-                        <li>A/B Testing</li>
-                        <li>Exploratory Data Analysis (EDA)</li>
-                    </ul>
-                </div>
+            <div class="skills">
+                <span class="skill">Linear Regression</span>
+                <span class="skill">Gradient Boosted Machines</span>
+                <span class="skill">Random Forests</span>
+                <span class="skill">SVM</span>
+                <span class="skill">LSTM</span>
+                <span class="skill">CNN</span>
+                <span class="skill">Transfer Learning</span>
+                <span class="skill">NLP</span>
+                <span class="skill">Word Embedding (Word2Vec, BERT)</span>
+                <span class="skill">Text Classification</span>
+                <span class="skill">Sentiment Analysis</span>
+                <span class="skill">Exploratory Data Analysis (EDA)</span>
+                <span class="skill">A/B Testing</span>
+                <span class="skill">Hypothesis Testing</span>
+                <span class="skill">LIME</span>
+                <span class="skill">SHAP</span>
             </div>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <h3>Voice Assistant with OpenAI</h3>
-                <p>Implemented a virtual voice assistant using OpenAI's API, capable of understanding natural language and providing coherent responses.</p>
+        <section id="languages">
+            <h2>Programming Languages</h2>
+            <div class="languages">
+                <span class="language">Python</span>
+                <span class="language">SQL</span>
+                <span class="language">R</span>
             </div>
-            <div class="project-item">
-                <h3>Stock Price Prediction</h3>
-                <p>Developed an LSTM-based model for stock price prediction, demonstrating proficiency in time-series forecasting with deep learning and financial data.</p>
+        </section>
+
+        <section id="tools">
+            <h2>Tools</h2>
+            <div class="tools">
+                <span class="tool">Pandas</span>
+                <span class="tool">NumPy</span>
+                <span class="tool">Matplotlib</span>
+                <span class="tool">Seaborn</span>
+                <span class="tool">TensorFlow</span>
+                <span class="tool">PyTorch</span>
+                <span class="tool">Keras</span>
+                <span class="tool">PowerBI</span>
+                <span class="tool">AWS</span>
+                <span class="tool">GCP</span>
             </div>
-            <div class="project-item">
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <a href="tel:+917018941218"><i class="fas fa-phone"></i> +91 7018941218</a>
+                <a href="mailto:datadynamos3@gmail.com"><i class="fas fa-envelope"></i> datadynamos3@gmail.com</a>
+                <a href="https://github.com/mystdream" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/abhaysharma38" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Abhay Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
